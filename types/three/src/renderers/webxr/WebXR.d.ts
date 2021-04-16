@@ -80,14 +80,13 @@ export interface XRRenderStateInit {
 
 export interface XRGamepad {
     readonly id: string;
-    readonly index: number;  // long
+    readonly index: number; // long
     readonly connected: boolean;
     readonly timestamp: DOMHighResTimeStamp;
     readonly mapping: GamepadMappingType;
-    readonly axes: Float32Array;  // FrozenArray<double>;
+    readonly axes: Float32Array; // FrozenArray<double>;
     readonly buttons: GamepadButton[]; // FrozenArray<GamepadButton>;
 }
-
 
 export interface XRInputSource {
     readonly handedness: XRHandedness;
